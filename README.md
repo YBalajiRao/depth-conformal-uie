@@ -12,8 +12,8 @@ addresses both issues:
   from a frozen **Depth-Anything-V2-Small** depth prior through two channel-ordered attenuation chains, one for the
   direct signal and one for backscatter. A **Normal-Inverse-Gamma (NIG)** head outputs a per-pixel predictive spread.
 - **Calibrated pixel intervals.** Split-conformal calibration on the validation split turns the spread into
-  intervals. They cover **89.2%** of test pixels at the 90% level, against 70.6% for the uncalibrated head. On a
-  zero-shot water type, coverage drops to 74.5%; recalibrating on **500** target images restores **89.4%**.
+  intervals. They cover **89.2%** of test pixels at the 90% level, against 70.5% for the uncalibrated head. On a
+  zero-shot water type, coverage drops to 74.4%; recalibrating on **500** target images restores **89.4%**.
 - **Leakage-controlled evaluation.** LSUI and UIEB are split by **4,676 duplicate-connected components** (SHA-256
   and perceptual-hash links). The test split was opened once for point metrics, behind a lock file. Gates and
   claims were pre-registered, and a near-duplicate-filtered test subset (493 images) is reported alongside the
@@ -64,9 +64,9 @@ The full table, including Challenge-60 no-reference metrics, is in [`docs/master
 | Set | Nominal | Coverage | Mean half-width (grey levels) | Uncalibrated NIG coverage |
 |---|---|---|---|---|
 | Locked test | 80% | 0.782 | 17.6 | 0.612 |
-| Locked test | 90% | 0.892 | 26.1 | 0.706 |
+| Locked test | 90% | 0.892 | 26.1 | 0.705 |
 | Locked test | 95% | 0.948 | 35.7 | 0.767 |
-| EUVP-dark (zero-shot) | 90% | 0.745 | 30.6 | 0.531 |
+| EUVP-dark (zero-shot) | 90% | 0.744 | 30.6 | 0.531 |
 | EUVP-dark, recalibrated on 500 images* | 90% | 0.894 | 55.5 | — |
 
 \*Exploratory analysis: quantiles re-fitted on 500 EUVP-dark images and evaluated on the disjoint 5,050.
