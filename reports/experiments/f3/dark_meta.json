@@ -1,0 +1,23 @@
+{
+ "split": "dark",
+ "n": 5550,
+ "source_sha": "euvp_underwater_dark_trainA_trainB",
+ "commit": "f0f3cc558cdd7b304c4d4b66b50dd002a8560888",
+ "K": 4096,
+ "runtime": {
+  "start": "2026-11-17T23:35:55",
+  "end": "2026-11-17T23:47:05",
+  "runtime_s": 669.3
+ },
+ "device_counts": {
+  "P1b_s0": {
+   "cuda": 5550
+  },
+  "P1b_s1": {
+   "cuda": 5550
+  },
+  "P1b_s2": {
+   "cuda": 5550
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "source": "runs\\diagnostics\\PHASE_E_PRETRAINED2_20261118_000048\\outputs",
+ "c60": {
+  "FiveA+_official_a0.1": {
+   "musiq": 40.164518133799234,
+   "uranker": 0.7327075026929378,
+   "n": 60
+  },
+  "FiveA+_official_a0.4": {
+   "musiq": 39.37630138397217,
+   "uranker": 0.45441332875440515,
+   "n": 60
+  },
+  "fiveaplus_retrained": {
+   "musiq": 42.47289479573568,
+   "uranker": 0.38549538934603333,
+   "n": 60
+  },
+  "input": {
+   "musiq": 41.66467469533284,
+   "uranker": -0.4479002509731799,
+   "n": 60
+  },
+  "MARINE-Net-LSUI": {
+   "musiq": 28.294499572118124,
+   "uranker": 0.3335017712476353,
+   "n": 60
+  },
+  "P1b_s0": {
+   "musiq": 41.39977881113688,
+   "uranker": 0.5512595110883315,
+   "n": 60
+  },
+  "PhaseFormer-UFO120": {
+   "musiq": 48.46135059992472,
+   "uranker": -0.3666604512681564,
+   "n": 60
+  },
+  "PhaseFormer-UIEB": {
+   "musiq": 40.849812205632524,
+   "uranker": 0.4415100493390734,
+   "n": 60
+  },
+  "UIR-PolyKernel": {
+   "musiq": 32.87898372014364,
+   "uranker": 0.6267888431902975,
+   "n": 60
+  },
+  "ushape_retrained": {
+   "musiq": 25.418215799331666,
+   "uranker": 0.13419780648934346,
+   "n": 60
+  },
+  "wweuie_retrained": {
+   "musiq": 41.943350060780844,
+   "uranker": 0.45996964727140344,
+   "n": 60
+  }
+ },
+ "dark200_ciede2000": {
+  "FiveA+_official_a0.1": {
+   "ciede2000": 16.292774798463995,
+   "n": 200
+  },
+  "FiveA+_official_a0.4": {
+   "ciede2000": 22.77173774429725,
+   "n": 200
+  },
+  "fiveaplus_retrained": {
+   "ciede2000": 15.610882625553113,
+   "n": 200
+  },
+  "input": {
+   "ciede2000": 20.67502788878223,
+   "n": 200
+  },
+  "MARINE-Net-LSUI": {
+   "ciede2000": 14.14974898221264,
+   "n": 200
+  },
+  "P1b_s0": {
+   "ciede2000": 14.229796181630473,
+   "n": 200
+  },
+  "PhaseFormer-UIEB": {
+   "ciede2000": 16.059334324358247,
+   "n": 200
+  },
+  "ushape_retrained": {
+   "ciede2000": 16.02358244487236,
+   "n": 200
+  },
+  "wweuie_retrained": {
+   "ciede2000": 14.190371767526447,
+   "n": 200
+  }
+ }
+}

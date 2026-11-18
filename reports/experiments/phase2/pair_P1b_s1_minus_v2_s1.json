@@ -1,0 +1,90 @@
+{
+  "name": "P1b_s1 - v2_s1",
+  "a": {
+    "csv": "runs\\diagnostics\\P2_EVAL517_P1b_s1_20261111_160445\\per_image_P1b_s1.csv",
+    "sha256": "0a1b679a8d4c954f650deba18138a89c128b934a570da1a69bc30a0404003559"
+  },
+  "b": {
+    "csv": "runs\\diagnostics\\P2_EVAL517_v2_s1_20261112_022006\\per_image_v2_s1.csv",
+    "sha256": "b112eef4847e90bb28a7302058b4b994ed7e335d9c097b22257364625875d39f"
+  },
+  "paired": {
+    "d_psnr8": {
+      "LSUI": {
+        "est": 0.22125840116885628,
+        "lo": 0.004412436243031442,
+        "hi": 0.43784865433634407,
+        "n": 428,
+        "d_z": 0.09457437509917102,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.572429906542056
+      },
+      "UIEB": {
+        "est": 0.5915758084121325,
+        "lo": 0.1068706532860553,
+        "hi": 1.0840295769743644,
+        "n": 89,
+        "d_z": 0.25066861810449365,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.5730337078651685
+      },
+      "ALL": {
+        "est": 0.28500743258984584,
+        "lo": 0.09403267006425363,
+        "hi": 0.4801698483078542,
+        "n": 517,
+        "d_z": 0.12154166353055372,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.5725338491295938
+      }
+    },
+    "d_ssim8": {
+      "LSUI": {
+        "est": -0.00029312488883117714,
+        "lo": -0.0015661505883479145,
+        "hi": 0.000843345241821429,
+        "n": 428,
+        "d_z": -0.022925608925083336,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5327102803738317
+      },
+      "UIEB": {
+        "est": 0.00825684937932626,
+        "lo": 0.0021876096924721275,
+        "hi": 0.01424193215370281,
+        "n": 89,
+        "d_z": 0.28281373197055,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.5842696629213483
+      },
+      "ALL": {
+        "est": 0.001178727548046989,
+        "lo": -0.00023728399690174054,
+        "hi": 0.0026024229758432986,
+        "n": 517,
+        "d_z": 0.06908802624971665,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5415860735009671
+      }
+    }
+  },
+  "section_L_per_seed_test": {
+    "LSUI": {
+      "meets_margin_and_ci": true,
+      "direction": "a>b"
+    },
+    "UIEB": {
+      "meets_margin_and_ci": true,
+      "direction": "a>b"
+    },
+    "ALL": {
+      "meets_margin_and_ci": true,
+      "direction": "a>b"
+    }
+  },
+  "margin_db": 0.2,
+  "bootstrap": {
+    "B": 2000,
+    "seed": 20261107
+  }
+}

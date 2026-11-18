@@ -1,0 +1,76 @@
+{
+ "commit": "c296c8af1c6c73eea0a0dad1498650640d9f9576",
+ "gpu": "NVIDIA GeForce RTX 3070",
+ "torch": "2.7.1+cu118",
+ "precision": "fp32 (models)",
+ "batch": 1,
+ "notes": "gmacs = thop multiply-accumulates; ushape 512 = resize protocol",
+ "results": {
+  "P1b_s0": {
+   "params": 4284413,
+   "gmacs_256": 14.104,
+   "peak_mb_256": 166.0,
+   "fps_256": 64.75,
+   "gmacs_512": 56.415,
+   "peak_mb_512": 590.5,
+   "fps_512": 18.19
+  },
+  "v2_s0": {
+   "params": 4152052,
+   "gmacs_256": 14.104,
+   "peak_mb_256": 165.2,
+   "fps_256": 67.15,
+   "gmacs_512": 56.414,
+   "peak_mb_512": 589.0,
+   "fps_512": 18.5
+  },
+  "P1e_s0": {
+   "params": 4286086,
+   "gmacs_256": 14.104,
+   "peak_mb_256": 166.0,
+   "fps_256": 65.29,
+   "gmacs_512": 56.415,
+   "peak_mb_512": 590.5,
+   "fps_512": 18.33
+  },
+  "fiveaplus": {
+   "params": 8990,
+   "gmacs_256": 0.585,
+   "peak_mb_256": 78.1,
+   "fps_256": 268.18,
+   "gmacs_512": 2.341,
+   "peak_mb_512": 235.7,
+   "fps_512": 84.77
+  },
+  "wweuie": {
+   "params": 734059,
+   "gmacs_256": 6.251,
+   "peak_mb_256": 90.6,
+   "fps_256": 110.99,
+   "gmacs_512": 25.003,
+   "peak_mb_512": 326.8,
+   "fps_512": 29.64
+  },
+  "ushape": {
+   "params": 31589775,
+   "gmacs_256": 2.983,
+   "peak_mb_256": 224.4,
+   "fps_256": 29.26,
+   "gmacs_512": "fixed 256x256 architecture (resize protocol)",
+   "peak_mb_512": 227.6,
+   "fps_512": 28.61
+  },
+  "depth_anything_v2_small": {
+   "params": 24785089,
+   "precision": "fp16 (as precomputed)",
+   "peak_mb_256": 364.8,
+   "fps_256": 57.94,
+   "peak_mb_512": 364.8,
+   "fps_512": 47.76
+  },
+  "P1b_s0 + depth": {
+   "fps_256": 30.58,
+   "fps_512": 13.17
+  }
+ }
+}

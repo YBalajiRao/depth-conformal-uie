@@ -1,0 +1,13 @@
+{
+ "v1_retrain_params": 4152052,
+ "mean_sigma_P1b_s0_val": 0.03417716547846794,
+ "mean_sigma_E3_val": 0.037339843809604645,
+ "mean_sigma_P1b_s0_test": 0.03375377506017685,
+ "mean_sigma_E3_test": 0.036672815680503845,
+ "mean_sigma_P1b_s0_dark": 0.039538729935884476,
+ "mean_sigma_E3_dark": 0.04439769312739372,
+ "sigma_ratio_P1b_s0_test_over_val": 0.9876118919645974,
+ "sigma_ratio_P1b_s0_dark_over_val": 1.156875632673353,
+ "sigma_ratio_E3_test_over_val": 0.982136290325638,
+ "sigma_ratio_E3_dark_over_val": 1.1890165731216487
+}

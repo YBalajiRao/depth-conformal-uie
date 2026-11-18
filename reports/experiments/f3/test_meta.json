@@ -1,0 +1,26 @@
+{
+ "split": "test",
+ "n": 517,
+ "source_sha": "c34fda19b88d82c22837bf2769ab6ae09dbd5d31c5f3f77e560dafecc6be6d35",
+ "commit": "cdd0a3c51f5232e053159449f52824e7a98da30d",
+ "K": 4096,
+ "runtime": {
+  "start": "2026-11-17T23:47:08",
+  "end": "2026-11-18T00:00:36",
+  "runtime_s": 808.7
+ },
+ "device_counts": {
+  "P1b_s0": {
+   "cpu": 25,
+   "cuda": 492
+  },
+  "P1b_s1": {
+   "cuda": 493,
+   "cpu": 24
+  },
+  "P1b_s2": {
+   "cpu": 25,
+   "cuda": 492
+  }
+ }
+}

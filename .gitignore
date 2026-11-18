@@ -1,0 +1,24 @@
+# model weights (request from the author; verify with scripts/verify_checkpoints.py)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.npz
+
+# datasets, precomputed depth, run outputs, cloned baseline repositories
+data/raw/
+data/depth/
+data/scene/
+runs/
+outputs/
+baselines/repos/
+figs/
+
+# Python / editor
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/

@@ -1,0 +1,15 @@
+# Tested with Python 3.12 on Windows 11 and an NVIDIA RTX 3070 (CUDA 11.8).
+# Install the CUDA build of PyTorch that matches your driver first (see pytorch.org), for example:
+#   pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1
+torchvision==0.22.1
+numpy>=2.0
+pillow>=10.0
+scipy>=1.11
+scikit-image>=0.22
+matplotlib>=3.8
+opencv-python>=4.8
+transformers>=4.45        # Depth-Anything-V2-Small (Hugging Face checkpoint)
+lpips==0.1.4              # LPIPS (AlexNet), version pinned for reproducibility
+pyiqa==0.1.16             # MUSIQ and URanker
+thop>=0.1.1               # MAC counts in the efficiency benchmark

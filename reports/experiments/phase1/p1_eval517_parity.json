@@ -1,0 +1,67 @@
+{
+  "tolerance_db": 0.01,
+  "max_abs_d_psnr8": 0.0028457089015994086,
+  "failure_control_tripped": true,
+  "images": [
+    {
+      "unit": "LSUI:3142.jpg",
+      "dataset": "LSUI",
+      "abs_d_psnr8": 0.00042950041091671665,
+      "max_abs_mu": 0.00017440319061279297
+    },
+    {
+      "unit": "LSUI:3082.jpg",
+      "dataset": "LSUI",
+      "abs_d_psnr8": 0.0006692576255709071,
+      "max_abs_mu": 0.00016129016876220703
+    },
+    {
+      "unit": "LSUI:3356.jpg",
+      "dataset": "LSUI",
+      "abs_d_psnr8": 0.00035634134330919665,
+      "max_abs_mu": 0.00018262863159179688
+    },
+    {
+      "unit": "LSUI:1043.jpg",
+      "dataset": "LSUI",
+      "abs_d_psnr8": 0.0028457089015994086,
+      "max_abs_mu": 0.00020331144332885742
+    },
+    {
+      "unit": "LSUI:1812.jpg",
+      "dataset": "LSUI",
+      "abs_d_psnr8": 0.001525499951078757,
+      "max_abs_mu": 0.00015401840209960938
+    },
+    {
+      "unit": "UIEB:300_img_.png",
+      "dataset": "UIEB",
+      "abs_d_psnr8": 0.0005231594031727127,
+      "max_abs_mu": 0.00010764598846435547
+    },
+    {
+      "unit": "UIEB:707_img_.png",
+      "dataset": "UIEB",
+      "abs_d_psnr8": 0.0007212223183437061,
+      "max_abs_mu": 0.0002707242965698242
+    },
+    {
+      "unit": "UIEB:160_img_.png",
+      "dataset": "UIEB",
+      "abs_d_psnr8": 0.0005159013341966556,
+      "max_abs_mu": 0.00012663006782531738
+    },
+    {
+      "unit": "UIEB:55_img_.png",
+      "dataset": "UIEB",
+      "abs_d_psnr8": 0.001209129824854216,
+      "max_abs_mu": 0.00017368793487548828
+    },
+    {
+      "unit": "UIEB:605_img_.png",
+      "dataset": "UIEB",
+      "abs_d_psnr8": 0.0010007419399791218,
+      "max_abs_mu": 0.00011605024337768555
+    }
+  ]
+}

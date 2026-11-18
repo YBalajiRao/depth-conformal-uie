@@ -1,0 +1,82 @@
+{
+ "date": "2026-11-13T17:40:38",
+ "n_train": 4135,
+ "positive_control_ok": true,
+ "sets": {
+  "EUVP_test_samples": {
+   "n": 515,
+   "hash_exact": 387,
+   "hash_le4": 412,
+   "hash_le8": 420,
+   "verified_duplicates_pix_ge35dB": 409,
+   "verified_near_pix_ge25dB": 410,
+   "clean_fraction_hash_gt8": 0.18446601941747573
+  },
+  "EUVP_underwater_dark": {
+   "n": 6120,
+   "hash_exact": 0,
+   "hash_le4": 23,
+   "hash_le8": 232,
+   "verified_duplicates_pix_ge35dB": 0,
+   "verified_near_pix_ge25dB": 0,
+   "clean_fraction_hash_gt8": 0.9620915032679739
+  },
+  "EUVP_underwater_imagenet": {
+   "n": 4970,
+   "hash_exact": 17,
+   "hash_le4": 59,
+   "hash_le8": 396,
+   "verified_duplicates_pix_ge35dB": 18,
+   "verified_near_pix_ge25dB": 18,
+   "clean_fraction_hash_gt8": 0.9203219315895372
+  },
+  "EUVP_underwater_scenes": {
+   "n": 2315,
+   "hash_exact": 1332,
+   "hash_le4": 1453,
+   "hash_le8": 1491,
+   "verified_duplicates_pix_ge35dB": 1435,
+   "verified_near_pix_ge25dB": 1443,
+   "clean_fraction_hash_gt8": 0.35593952483801294
+  },
+  "UIEB_challenge_60": {
+   "n": 60,
+   "hash_exact": 0,
+   "hash_le4": 2,
+   "hash_le8": 7,
+   "verified_duplicates_pix_ge35dB": 0,
+   "verified_near_pix_ge25dB": 0,
+   "clean_fraction_hash_gt8": 0.8833333333333333
+  },
+  "our_val": {
+   "n": 517,
+   "hash_exact": 1,
+   "hash_le4": 20,
+   "hash_le8": 73,
+   "verified_duplicates_pix_ge35dB": 0,
+   "verified_near_pix_ge25dB": 20,
+   "clean_fraction_hash_gt8": 0.8588007736943907,
+   "near_by_dataset_pix_ge25dB": {
+    "LSUI": 20,
+    "UIEB": 0
+   }
+  }
+ },
+ "external_training_lists_vs_our_val": {
+  "V2/LSUI_train.txt": {
+   "list_size": 3160,
+   "overlap_with_our_val": 320,
+   "our_val_size": 428
+  },
+  "V2/UIEB_train.txt": {
+   "list_size": 738,
+   "overlap_with_our_val": 76,
+   "our_val_size": 89
+  },
+  "UIEB/train800.txt": {
+   "list_size": 800,
+   "overlap_with_our_val": 81,
+   "our_val_size": 89
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+  "commit": "c296c8af1c6c73eea0a0dad1498650640d9f9576",
+  "model": "PhaseFormer official UIEB checkpoint (external pretrained)",
+  "ckpt_sha256": "fbb2092e299e774e9fc35a4ddb6a24a0a4ac159e9c5b754b3f1d6dff18f9dfc8",
+  "protocol": "official: bicubic 512, [-1,1], output[1]; resized back to native (bicubic) for FR metrics",
+  "absolute_dark": {
+    "psnr8": 18.566060396800403,
+    "ssim8": 0.8580347034988358,
+    "lpips": 0.29356338102538304
+  },
+  "absolute_c60": {
+    "uiqm": 2.3274988194408537,
+    "uciqe": 0.5462134164990976
+  },
+  "paired_P1b_minus_pretrained": {
+    "dark": {
+      "psnr8": {
+        "est": 1.4491722658517043,
+        "lo": 1.3946959711799838,
+        "hi": 1.5067994782110699,
+        "d_z": 0.6970493830163612,
+        "n": 5550,
+        "ci_excludes_0": true
+      },
+      "ssim8": {
+        "est": 0.02460535041467413,
+        "lo": 0.0233203756242393,
+        "hi": 0.02587157130195725,
+        "d_z": 0.501315902444065,
+        "n": 5550,
+        "ci_excludes_0": true
+      },
+      "lpips": {
+        "est": -0.0320250669343246,
+        "lo": -0.03306595988991159,
+        "hi": -0.031041105177656222,
+        "d_z": -0.8224777634917473,
+        "n": 5550,
+        "ci_excludes_0": true
+      }
+    },
+    "c60": {
+      "uiqm": {
+        "est": -0.0900080059406573,
+        "lo": -0.14270507513506603,
+        "hi": -0.04180513447554214,
+        "d_z": -0.44799273373621495,
+        "n": 60,
+        "ci_excludes_0": true
+      },
+      "uciqe": {
+        "est": 0.013654242371512781,
+        "lo": 0.00732321882179524,
+        "hi": 0.020140846481646477,
+        "d_z": 0.5464850949419098,
+        "n": 60,
+        "ci_excludes_0": true
+      }
+    }
+  },
+  "n": {
+    "dark": 5550,
+    "c60": 60
+  }
+}

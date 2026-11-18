@@ -1,0 +1,102 @@
+{
+  "created": "2026-11-06T17:20:00",
+  "args": {
+    "pairs": [
+      "reports\\dataset_audit\\unit_level_overlap\\unit_level_overlap.csv",
+      "reports\\dataset_audit\\overlap_audit_v2_20261105\\unit_pairs_best_evidence.csv"
+    ],
+    "hash_csv": "reports\\dataset_audit\\overlap_audit_v2_20261105\\combined_hash_inventory.csv",
+    "edges": "all",
+    "max_phash": 6,
+    "ratios": "0.8,0.1,0.1",
+    "seed": 0,
+    "out": null,
+    "overwrite": false
+  },
+  "edge_stats": {
+    "rows:unit_level_overlap.csv": 18368,
+    "rows:unit_pairs_best_evidence.csv": 20461
+  },
+  "n_edges": 20461,
+  "n_units": 5169,
+  "n_components": 4676,
+  "component_size_hist": {
+    "1": 4396,
+    "2": 219,
+    "3": 28,
+    "4": 11,
+    "5": 6,
+    "6": 4,
+    "7": 4,
+    "9": 2,
+    "10": 1,
+    "11": 1,
+    "12": 1,
+    "14": 1,
+    "16": 1,
+    "44": 1
+  },
+  "largest_component": 44,
+  "counts": {
+    "train": {
+      "LSUI": 3423,
+      "UIEB": 712
+    },
+    "val": {
+      "LSUI": 428,
+      "UIEB": 89
+    },
+    "test": {
+      "LSUI": 428,
+      "UIEB": 89
+    }
+  },
+  "achieved_ratio": {
+    "LSUI": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "UIEB": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    }
+  },
+  "components_linked_to_external_family_by_split": {
+    "train": {
+      "EUVP_test": 386,
+      "EUVP_unpB": 1215,
+      "EUVP_unpaired_val": 97,
+      "EUVP_scenes_val": 59,
+      "EUVP_unpA": 1334,
+      "EUVP_scenes": 1333,
+      "EUVP_imagenet": 18,
+      "EUVP_dark": 3,
+      "EUVP_imagenet_val": 1
+    },
+    "val": {
+      "EUVP_test": 44,
+      "EUVP_unpaired_val": 10,
+      "EUVP_scenes_val": 8,
+      "EUVP_unpA": 167,
+      "EUVP_scenes": 167,
+      "EUVP_unpB": 155
+    },
+    "test": {
+      "EUVP_unpA": 158,
+      "EUVP_scenes": 158,
+      "EUVP_unpB": 147,
+      "EUVP_test": 36,
+      "EUVP_unpaired_val": 7,
+      "EUVP_scenes_val": 6,
+      "EUVP_imagenet": 2
+    }
+  },
+  "verification": "PASS",
+  "caveats": [
+    "pHash edges are unverified candidates (precision/recall unknown); used only to group, never to exclude.",
+    "Checks cover duplicates WITHIN the local LSUI/UIEB/EUVP files only. Pretrained restorer checkpoints may have been trained on any of these images (training data unknown).",
+    "EUVP-linked components are reported so EUVP-test can be cleaned before cross-dataset evaluation."
+  ]
+}

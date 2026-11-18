@@ -1,0 +1,103 @@
+{
+ "source": "src/diagnostics/phase_f_test.py MODELS (report section Q)",
+ "checkpoints": {
+  "P1b_s0": {
+   "kind": "dgt",
+   "path": "runs/phase1/P1b_v2_dgt_ordered/20261110_093229/last.pt",
+   "bytes": 51579659,
+   "sha256": "5b22ea7c217b09b96ad2b6309b21b5cbca906444e2f442dd9732965ec9db52c0",
+   "matches_pinned": true
+  },
+  "P1b_s1": {
+   "kind": "dgt",
+   "path": "runs/phase2/P1b_s1/20261111_070454/last.pt",
+   "bytes": 51579787,
+   "sha256": "140f0e4f6cf60bbf7e7f186acae6f10fa3923f617654ebefd8bd97db4d888f88",
+   "matches_pinned": true
+  },
+  "P1b_s2": {
+   "kind": "dgt",
+   "path": "runs/phase2/P1b_s2/20261112_082323/last.pt",
+   "bytes": 51579723,
+   "sha256": "684b5a324ab71e1a0d004168af563c03e436f96c56c3401bfd9ed9b489956430",
+   "matches_pinned": true
+  },
+  "v2_s0": {
+   "kind": "plain",
+   "path": "runs/ablation/stage1/S1_v2_full/20261107_193709/last.pt",
+   "bytes": 49996063,
+   "sha256": "8a50ea4dc3dd43c2dd23af343df531df4ca5185ff30ad0955dddb5dad60b2eaa",
+   "matches_pinned": true
+  },
+  "v2_s1": {
+   "kind": "plain",
+   "path": "runs/phase2/v2_s1/20261111_161156/last.pt",
+   "bytes": 49996639,
+   "sha256": "9030037adcb124706f1577bb8c194f5ad3358ff2373e6c2c99858a0604875dc0",
+   "matches_pinned": true
+  },
+  "v2_s2": {
+   "kind": "plain",
+   "path": "runs/phase2/v2_s2/20261112_174530/last.pt",
+   "bytes": 49996511,
+   "sha256": "0549d7445b07629e412cd0dbbcc95ac5ca1eadba1deb98e7351e3eba72d23816",
+   "matches_pinned": true
+  },
+  "P1e_s0": {
+   "kind": "scene",
+   "path": "runs/phase1/P1e_scene_pca16/20261117_061952/last.pt",
+   "bytes": 51604027,
+   "sha256": "f0ac978c371abcb870b5fbb88c31b47897ca33c95ceb395b03a3417e9a6fc3d4",
+   "matches_pinned": true
+  },
+  "v1_retrain": {
+   "kind": "plain",
+   "path": "runs/ablation/stage1/S1_v1_retrain/20261107_102639/last.pt",
+   "bytes": 49996063,
+   "sha256": "42e1b674cb864362275f3f04df061f6c07b815252df738db63993da7b986a624",
+   "matches_pinned": true
+  },
+  "A2_no_physics": {
+   "kind": "plain",
+   "path": "runs/ablation/stage1/S1_A2_no_physics/20261108_084156/last.pt",
+   "bytes": 49996063,
+   "sha256": "62f7604c78145a959e67532049b71502dd7bf71e595c72e67b78b2752179ac99",
+   "matches_pinned": true
+  },
+  "A3_v2_no_Lphys": {
+   "kind": "plain",
+   "path": "runs/ablation/stage1/S1_A3_v2_no_Lphys/20261108_184308/last.pt",
+   "bytes": 49996127,
+   "sha256": "91a4fdeaa3ea973b3d06716542e7886582da7d2466d9ba001650a4c505d334fd",
+   "matches_pinned": true
+  },
+  "A4_v2_no_NIG": {
+   "kind": "plain",
+   "path": "runs/ablation/stage1/S1_A4_v2_no_NIG/20261109_074648/last.pt",
+   "bytes": 49996063,
+   "sha256": "f70fb83c123eb56b867f50d099c2bb7362a3e5e6d87c91a572e24481507b02c4",
+   "matches_pinned": true
+  },
+  "fiveaplus": {
+   "kind": "base",
+   "path": "runs/baselines/fiveaplus/20261113_170747/last.pt",
+   "bytes": 179036,
+   "sha256": "61cf5174bbdee938d35fecbf9a5be72457f8a7c55784643689f961f558cb96a1",
+   "matches_pinned": true
+  },
+  "ushape": {
+   "kind": "base",
+   "path": "runs/baselines/ushape/20261116_094852/last.pt",
+   "bytes": 378015753,
+   "sha256": "8057943ef123268fda1cdeef3858461561daf2eeeb7851f1b5af1cca4a771ac7",
+   "matches_pinned": true
+  },
+  "wweuie": {
+   "kind": "base",
+   "path": "runs/baselines/wweuie/20261116_222308/last.pt",
+   "bytes": 9037036,
+   "sha256": "c0e9261627943589e9bad0353ac0e7cbf0af664520788b21d188c66ed96856c4",
+   "matches_pinned": true
+  }
+ }
+}

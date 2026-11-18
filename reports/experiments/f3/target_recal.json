@@ -1,0 +1,145 @@
+{
+ "source_dark": "runs\\f3\\dark_20261117_233556",
+ "n_cal": 500,
+ "n_eval": 5050,
+ "split_seed": 20261118,
+ "exploratory": true,
+ "predictors": {
+  "P1b_s0": {
+   "0.8": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.7920034679249175,
+     "per_image_mean": 0.7920034679249174,
+     "per_image_p05": 0.4378255208333333,
+     "half_width_x255": 35.972923278808594
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.7917132064768977,
+     "per_image_mean": 0.7917132064768976,
+     "per_image_p05": 0.5252115885416666,
+     "half_width_x255": 30.79180732369423
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.6093438660272277,
+     "per_image_mean": 0.6093438660272277,
+     "per_image_p05": 0.25224609375,
+     "half_width_x255": 20.63603401184082
+    },
+    "q_target": 3.5700290203094482,
+    "q_validation": 2.047963857650757
+   },
+   "0.9": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.8935299994843234,
+     "per_image_mean": 0.8935299994843233,
+     "per_image_p05": 0.6181315104166667,
+     "half_width_x255": 55.509334564208984
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.8928765728135314,
+     "per_image_mean": 0.8928765728135313,
+     "per_image_p05": 0.677880859375,
+     "half_width_x255": 45.912533551454544
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.7437495487830033,
+     "per_image_mean": 0.7437495487830034,
+     "per_image_p05": 0.37919921875,
+     "half_width_x255": 30.602144241333008
+    },
+    "q_target": 5.508863925933838,
+    "q_validation": 3.0370216369628906
+   },
+   "0.95": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.94509765625,
+     "per_image_mean": 0.94509765625,
+     "per_image_p05": 0.7526041666666666,
+     "half_width_x255": 78.3207778930664
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.9455509359529704,
+     "per_image_mean": 0.9455509359529704,
+     "per_image_p05": 0.7927897135416666,
+     "half_width_x255": 62.1129110455513
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.8320178424092409,
+     "per_image_mean": 0.8320178424092408,
+     "per_image_p05": 0.500439453125,
+     "half_width_x255": 41.82472229003906
+    },
+    "q_target": 7.772719383239746,
+    "q_validation": 4.150773525238037
+   }
+  },
+  "E3_ensemble": {
+   "0.8": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.7882848597359736,
+     "per_image_mean": 0.7882848597359736,
+     "per_image_p05": 0.43583984375,
+     "half_width_x255": 33.19412612915039
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.7907397380363036,
+     "per_image_mean": 0.7907397380363037,
+     "per_image_p05": 0.5229329427083333,
+     "half_width_x255": 30.851562917232513
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.6082365150577558,
+     "per_image_mean": 0.6082365150577559,
+     "per_image_p05": 0.25177408854166666,
+     "half_width_x255": 19.71196937561035
+    },
+    "q_target": 2.9328625202178955,
+    "q_validation": 1.7416481971740723
+   },
+   "0.9": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.8926894466790429,
+     "per_image_mean": 0.8926894466790428,
+     "per_image_p05": 0.624169921875,
+     "half_width_x255": 50.213348388671875
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.893105339830858,
+     "per_image_mean": 0.8931053398308582,
+     "per_image_p05": 0.6803385416666666,
+     "half_width_x255": 46.34182311594486
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.7383491259282178,
+     "per_image_mean": 0.7383491259282178,
+     "per_image_p05": 0.3726888020833333,
+     "half_width_x255": 28.373319625854492
+    },
+    "q_target": 4.436593532562256,
+    "q_validation": 2.506920576095581
+   },
+   "0.95": {
+    "target_recalibrated_adaptive": {
+     "coverage": 0.9450399004744224,
+     "per_image_mean": 0.9450399004744224,
+     "per_image_p05": 0.7555013020833333,
+     "half_width_x255": 69.63505554199219
+    },
+    "target_recalibrated_constant": {
+     "coverage": 0.9464919167698019,
+     "per_image_mean": 0.9464919167698019,
+     "per_image_p05": 0.7947102864583334,
+     "half_width_x255": 63.14297877252102
+    },
+    "validation_calibrated_adaptive": {
+     "coverage": 0.8258057446369637,
+     "per_image_mean": 0.8258057446369638,
+     "per_image_p05": 0.4915364583333333,
+     "half_width_x255": 37.83378982543945
+    },
+    "q_target": 6.152595043182373,
+    "q_validation": 3.342799425125122
+   }
+  }
+ }
+}

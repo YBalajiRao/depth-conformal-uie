@@ -1,0 +1,315 @@
+{
+  "status": "EXPLORATORY: single seed (0); 517-image validation split, used repeatedly, NOT held-out; no claim of component contribution (Stage-2 criterion, \u00a7D, not evaluated)",
+  "rules": "execution report \u00a7D; see s1_labels.py docstring",
+  "sigma_labels": {
+    "v1_orig": "trained (le = 0.01)",
+    "v1_retrain": "trained (le = 0.01)",
+    "v2_full": "trained (le = 0.01)",
+    "A2_no_physics": "trained (le = 0.01)",
+    "A3_v2_no_Lphys": "trained (le = 0.01)",
+    "A4_v2_no_NIG": "UNTRAINED (le = 0; NIG head received no training signal)"
+  },
+  "comparisons": {
+    "v2_full - v1_retrain": {
+      "group": "primary",
+      "what": "v2 conditioning vs matched v1 (A1)",
+      "label": "REDUNDANT_PROVISIONAL",
+      "d_psnr8": {
+        "LSUI": {
+          "est": 0.046054853320907085,
+          "lo": -0.16782902242501238,
+          "hi": 0.2765208027952256,
+          "n": 428,
+          "d_z": 0.019963430287158617,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.4883177570093458
+        },
+        "UIEB": {
+          "est": -0.030519031257074055,
+          "lo": -0.40705185056407434,
+          "hi": 0.3889274327814442,
+          "n": 89,
+          "d_z": -0.015999254151672034,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.42696629213483145
+        },
+        "ALL": {
+          "est": 0.03287288866434941,
+          "lo": -0.15355191767193552,
+          "hi": 0.23516704894178428,
+          "n": 517,
+          "d_z": 0.014663857995700502,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.47775628626692457
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 2.039951459304428e-05,
+        "lo": -0.0015232867144795766,
+        "hi": 0.0015884776946030706,
+        "n": 517,
+        "d_z": 0.001104885887619978,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5241779497098646
+      }
+    },
+    "A2_no_physics - v1_retrain": {
+      "group": "primary",
+      "what": "physics pathway removed vs A1",
+      "label": "CANDIDATE_EFFECT",
+      "d_psnr8": {
+        "LSUI": {
+          "est": -0.19558186385627926,
+          "lo": -0.39252869984735894,
+          "hi": -0.0038221346817854484,
+          "n": 428,
+          "d_z": -0.09534701038992827,
+          "ci_excludes_0": true,
+          "frac_images_a_better": 0.4462616822429907
+        },
+        "UIEB": {
+          "est": -0.13037321353271114,
+          "lo": -0.5203060619227122,
+          "hi": 0.27246179741905047,
+          "n": 89,
+          "d_z": -0.06658056191776239,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5056179775280899
+        },
+        "ALL": {
+          "est": -0.18435639020289907,
+          "lo": -0.3636023479608103,
+          "hi": -0.01091845462857951,
+          "n": 517,
+          "d_z": -0.09064507813150036,
+          "ci_excludes_0": true,
+          "frac_images_a_better": 0.4564796905222437
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.0005029876588232448,
+        "lo": -0.0007789684893149331,
+        "hi": 0.0017820444348695707,
+        "n": 517,
+        "d_z": 0.0338620750509454,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.4932301740812379
+      }
+    },
+    "A3_v2_no_Lphys - v2_full": {
+      "group": "primary",
+      "what": "L_phys removed vs v2 (matched base)",
+      "label": "REDUNDANT_PROVISIONAL",
+      "d_psnr8": {
+        "LSUI": {
+          "est": -0.19638918564562563,
+          "lo": -0.3982270801916644,
+          "hi": 0.014707555150408667,
+          "n": 428,
+          "d_z": -0.09111839753539928,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.4742990654205608
+        },
+        "UIEB": {
+          "est": 0.14508362671175484,
+          "lo": -0.30558272715359186,
+          "hi": 0.5894571606157955,
+          "n": 89,
+          "d_z": 0.0657284264968555,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5280898876404494
+        },
+        "ALL": {
+          "est": -0.13760566475625063,
+          "lo": -0.3230160753330193,
+          "hi": 0.05358824657365233,
+          "n": 517,
+          "d_z": -0.06352864295412573,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.4835589941972921
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.0013628867957149564,
+        "lo": -7.755625622654054e-05,
+        "hi": 0.002893716120997837,
+        "n": 517,
+        "d_z": 0.07433417507590327,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.4816247582205029
+      }
+    },
+    "A4_v2_no_NIG - v2_full": {
+      "group": "primary",
+      "what": "NIG loss removed vs v2 (matched base)",
+      "label": "INCONCLUSIVE",
+      "d_psnr8": {
+        "LSUI": {
+          "est": -0.030094166679521597,
+          "lo": -0.22015304608196049,
+          "hi": 0.15317137476393966,
+          "n": 428,
+          "d_z": -0.015158707914871655,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5537383177570093
+        },
+        "UIEB": {
+          "est": 0.2035651083058984,
+          "lo": -0.20212136843178025,
+          "hi": 0.5827613116725175,
+          "n": 89,
+          "d_z": 0.10579292029052074,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5393258426966292
+        },
+        "ALL": {
+          "est": 0.01012957698334567,
+          "lo": -0.16333333682244822,
+          "hi": 0.17933792887622166,
+          "n": 517,
+          "d_z": 0.005128827050078633,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5512572533849129
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.001212905889182908,
+        "lo": -0.00016065991770164957,
+        "hi": 0.002616420506665306,
+        "n": 517,
+        "d_z": 0.07237736005252177,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5106382978723404
+      }
+    },
+    "A3_v2_no_Lphys - v1_retrain": {
+      "group": "secondary",
+      "what": "\u00a7D wording: arm - A1 (bases differ)",
+      "label": "REDUNDANT_PROVISIONAL",
+      "d_psnr8": {
+        "LSUI": {
+          "est": -0.15033433232471854,
+          "lo": -0.3303898179152231,
+          "hi": 0.04598273179705805,
+          "n": 428,
+          "d_z": -0.07289189791989428,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.4883177570093458
+        },
+        "UIEB": {
+          "est": 0.11456459545468083,
+          "lo": -0.21076321717311894,
+          "hi": 0.4624673822748006,
+          "n": 89,
+          "d_z": 0.0693273920702148,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.48314606741573035
+        },
+        "ALL": {
+          "est": -0.10473277609190124,
+          "lo": -0.2700667712767512,
+          "hi": 0.07238735764388006,
+          "n": 517,
+          "d_z": -0.052394657036376094,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.4874274661508704
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.0013832863103080007,
+        "lo": 0.00016344208944660843,
+        "hi": 0.0027299286983013607,
+        "n": 517,
+        "d_z": 0.09112353146143995,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.5029013539651838
+      }
+    },
+    "A4_v2_no_NIG - v1_retrain": {
+      "group": "secondary",
+      "what": "\u00a7D wording: arm - A1 (bases differ)",
+      "label": "REDUNDANT_PROVISIONAL",
+      "d_psnr8": {
+        "LSUI": {
+          "est": 0.01596068664138549,
+          "lo": -0.15778644263195402,
+          "hi": 0.18983479943053141,
+          "n": 428,
+          "d_z": 0.008789867153244512,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5116822429906542
+        },
+        "UIEB": {
+          "est": 0.17304607704882438,
+          "lo": -0.2254347350388152,
+          "hi": 0.5917820636669654,
+          "n": 89,
+          "d_z": 0.08755502243807443,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5280898876404494
+        },
+        "ALL": {
+          "est": 0.04300246564769509,
+          "lo": -0.1168992834475309,
+          "hi": 0.20852334839850598,
+          "n": 517,
+          "d_z": 0.023327667481470225,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5145067698259188
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.0012333054037759524,
+        "lo": -9.812489143670435e-06,
+        "hi": 0.0025429470474082113,
+        "n": 517,
+        "d_z": 0.08308080744944558,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5493230174081238
+      }
+    },
+    "v1_retrain - v1_orig": {
+      "group": "secondary",
+      "what": "run-to-run reference: A1 vs A0 (A0 resumed, code differs; not matched)",
+      "label": "CANDIDATE_EFFECT",
+      "d_psnr8": {
+        "LSUI": {
+          "est": 0.2537431353245921,
+          "lo": 0.08459926059552991,
+          "hi": 0.4246726470438109,
+          "n": 428,
+          "d_z": 0.1411081442015957,
+          "ci_excludes_0": true,
+          "frac_images_a_better": 0.5630841121495327
+        },
+        "UIEB": {
+          "est": -0.008295149641831237,
+          "lo": -0.42389251632723274,
+          "hi": 0.3877232140980202,
+          "n": 89,
+          "d_z": -0.004180242492960607,
+          "ci_excludes_0": false,
+          "frac_images_a_better": 0.5056179775280899
+        },
+        "ALL": {
+          "est": 0.20863403017563334,
+          "lo": 0.05031139700336179,
+          "hi": 0.3607153220708869,
+          "n": 517,
+          "d_z": 0.1138664816159804,
+          "ci_excludes_0": true,
+          "frac_images_a_better": 0.5531914893617021
+        }
+      },
+      "d_ssim8_ALL": {
+        "est": 0.0005163144003233626,
+        "lo": -0.0008477366672724343,
+        "hi": 0.0018452239364676387,
+        "n": 517,
+        "d_z": 0.031708829385285985,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5454545454545454
+      }
+    }
+  }
+}

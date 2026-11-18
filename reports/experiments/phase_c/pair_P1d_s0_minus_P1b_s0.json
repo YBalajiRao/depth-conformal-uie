@@ -1,0 +1,90 @@
+{
+  "name": "P1d_s0 - P1b_s0 (G2)",
+  "a": {
+    "csv": "runs\\diagnostics\\P2_EVAL517_P1d_s0_20261113_164108\\per_image_P1d_s0.csv",
+    "sha256": "0abac16deaac97e93b02ee9ee5dadef9cddd00ec32d6d76b3096916e0efd0296"
+  },
+  "b": {
+    "csv": "runs\\diagnostics\\P1B_EVAL517_20261110_184113\\per_image_P1b_v2_dgt_ordered.csv",
+    "sha256": "c16fd969710197074a2faa0f7fda403c88c213a3929e1be6437bc1f66637dccc"
+  },
+  "paired": {
+    "d_psnr8": {
+      "LSUI": {
+        "est": -0.28920040050611956,
+        "lo": -0.6679772187854313,
+        "hi": 0.07556246983508709,
+        "n": 428,
+        "d_z": -0.07376278585168955,
+        "ci_excludes_0": false,
+        "frac_images_a_better": 0.5116822429906542
+      },
+      "UIEB": {
+        "est": -1.8026843680611102,
+        "lo": -2.5750646043008225,
+        "hi": -1.087185543862276,
+        "n": 89,
+        "d_z": -0.4980552777203309,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.30337078651685395
+      },
+      "ALL": {
+        "est": -0.5497421279962437,
+        "lo": -0.8829556551123995,
+        "hi": -0.21812536145543043,
+        "n": 517,
+        "d_z": -0.140628594101379,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.4758220502901354
+      }
+    },
+    "d_ssim8": {
+      "LSUI": {
+        "est": -0.0022185423661756844,
+        "lo": -0.004504742078945863,
+        "hi": -0.00016007885443129297,
+        "n": 428,
+        "d_z": -0.09742984029484655,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.616822429906542
+      },
+      "UIEB": {
+        "est": -0.018699873896442704,
+        "lo": -0.030282111206367764,
+        "hi": -0.008381472385715396,
+        "n": 89,
+        "d_z": -0.3413876884056993,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.39325842696629215
+      },
+      "ALL": {
+        "est": -0.005055754176995344,
+        "lo": -0.007674348016055396,
+        "hi": -0.0024673194006757364,
+        "n": 517,
+        "d_z": -0.16153667322186488,
+        "ci_excludes_0": true,
+        "frac_images_a_better": 0.5783365570599613
+      }
+    }
+  },
+  "section_L_per_seed_test": {
+    "LSUI": {
+      "meets_margin_and_ci": false,
+      "direction": "a<b"
+    },
+    "UIEB": {
+      "meets_margin_and_ci": true,
+      "direction": "a<b"
+    },
+    "ALL": {
+      "meets_margin_and_ci": true,
+      "direction": "a<b"
+    }
+  },
+  "margin_db": 0.2,
+  "bootstrap": {
+    "B": 2000,
+    "seed": 20261107
+  }
+}

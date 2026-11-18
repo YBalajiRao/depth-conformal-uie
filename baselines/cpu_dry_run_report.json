@@ -1,0 +1,208 @@
+{
+ "torch": "2.7.1+cu118",
+ "cuda_visible": false,
+ "threads": 4,
+ "baselines": {
+  "ushape": {
+   "repo": "U-shape_Transformer_for_Underwater_Image_Enhancement",
+   "commit": "41f9897669d2e6f6718e00772ece2523d0f149a2",
+   "url": "https://github.com/LintaoPeng/U-shape_Transformer_for_Underwater_Image_Enhancement",
+   "licence": "MIT",
+   "params": 31589775,
+   "dummy_256_out": [
+    1,
+    3,
+    256,
+    256
+   ],
+   "size_probe": [
+    [
+     256,
+     256,
+     true
+    ],
+    [
+     240,
+     320,
+     "error: RuntimeError"
+    ],
+    [
+     248,
+     328,
+     "error: RuntimeError"
+    ],
+    [
+     252,
+     340,
+     "error: RuntimeError"
+    ],
+    [
+     250,
+     330,
+     "error: RuntimeError"
+    ],
+    [
+     257,
+     333,
+     "error: RuntimeError"
+    ]
+   ],
+   "train_iter": {
+    "loss": 0.958632230758667,
+    "finite": true,
+    "params_with_grad": 485,
+    "params_total": 495
+   },
+   "native_eval": {
+    "unit": "UIEB:322_img_.png",
+    "HxW": [
+     168,
+     299
+    ],
+    "out_HxW": [
+     168,
+     299
+    ],
+    "psnr8_untrained": 4.85269974006174,
+    "ssim8_untrained": 0.0021989362223679334,
+    "eval_mode": "resize256"
+   },
+   "status": "OK",
+   "sec": 4.2
+  },
+  "fiveaplus": {
+   "repo": "FiveAPlus-Network",
+   "commit": "c15e2234235ef4823ec6f5b28f0f1dfdf7173e87",
+   "url": "https://github.com/Owen718/FiveAPlus-Network",
+   "licence": "none stated (no LICENSE file; reuse rights unclear)",
+   "params": 8990,
+   "dummy_256_out": [
+    1,
+    3,
+    256,
+    256
+   ],
+   "size_probe": [
+    [
+     256,
+     256,
+     true
+    ],
+    [
+     240,
+     320,
+     true
+    ],
+    [
+     248,
+     328,
+     true
+    ],
+    [
+     252,
+     340,
+     true
+    ],
+    [
+     250,
+     330,
+     true
+    ],
+    [
+     257,
+     333,
+     true
+    ]
+   ],
+   "train_iter": {
+    "loss": 0.24926598370075226,
+    "finite": true,
+    "params_with_grad": 54,
+    "params_total": 57
+   },
+   "native_eval": {
+    "unit": "UIEB:322_img_.png",
+    "HxW": [
+     168,
+     299
+    ],
+    "out_HxW": [
+     168,
+     299
+    ],
+    "psnr8_untrained": 6.800617373558992,
+    "ssim8_untrained": 0.2186372049939276,
+    "eval_mode": "pad"
+   },
+   "status": "OK",
+   "sec": 0.4
+  },
+  "spectroformer": {
+   "repo": "Spectroformer",
+   "commit": "0a0c17b37e478bcc786cf923698f43c999587de9",
+   "url": "https://github.com/Mdraqibkhan/Spectroformer",
+   "licence": "MIT (stated in README)",
+   "params": 2511081,
+   "dummy_256_out": [
+    1,
+    3,
+    256,
+    256
+   ],
+   "size_probe": [
+    [
+     256,
+     256,
+     true
+    ],
+    [
+     240,
+     320,
+     true
+    ],
+    [
+     248,
+     328,
+     true
+    ],
+    [
+     252,
+     340,
+     "error: RuntimeError"
+    ],
+    [
+     250,
+     330,
+     "error: RuntimeError"
+    ],
+    [
+     257,
+     333,
+     "error: RuntimeError"
+    ]
+   ],
+   "train_iter": {
+    "loss": 0.25962507724761963,
+    "finite": true,
+    "params_with_grad": 431,
+    "params_total": 511
+   },
+   "native_eval": {
+    "unit": "UIEB:322_img_.png",
+    "HxW": [
+     168,
+     299
+    ],
+    "out_HxW": [
+     168,
+     299
+    ],
+    "psnr8_untrained": 4.799486063887894,
+    "ssim8_untrained": 0.005391268167948264,
+    "eval_mode": "pad"
+   },
+   "status": "OK",
+   "sec": 7.0
+  }
+ }
+}

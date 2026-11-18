@@ -1,0 +1,144 @@
+{
+ "started": "2026-11-17T17:58:45",
+ "events": [
+  {
+   "t": "2026-11-17T06:19:46",
+   "msg": "launch P1e"
+  },
+  {
+   "t": "2026-11-17T17:11:43",
+   "msg": "charged train P1e (P1e reserve)",
+   "days": 0.4527,
+   "spent": 1.6414,
+   "remaining": 0.2386
+  },
+  {
+   "t": "2026-11-17T17:11:43",
+   "msg": "P1e trained",
+   "run_dir": "runs\\phase1\\P1e_scene_pca16\\20261117_061952",
+   "last_pt_sha256": "f0ac978c371abcb870b5fbb88c31b47897ca33c95ceb395b03a3417e9a6fc3d4"
+  },
+  {
+   "t": "2026-11-17T17:11:58",
+   "msg": "charged eval517 P1e (P1e reserve)",
+   "days": 0.0002,
+   "spent": 1.6416,
+   "remaining": 0.2384
+  },
+  {
+   "t": "2026-11-17T17:11:58",
+   "msg": "STOP: P1e evaluation failed",
+   "code": 1
+  },
+  {
+   "t": "2026-11-17T17:58:46",
+   "msg": "eval-only rerun (parity failure control revised: +/-8 checkerboard)",
+   "git_head": "28d077ae8e6a760e99e4dbcfe1ea646b3c0a308e",
+   "git_clean_src": true
+  },
+  {
+   "t": "2026-11-17T17:58:46",
+   "msg": "P1e trained",
+   "run_dir": "runs\\phase1\\P1e_scene_pca16\\20261117_061952",
+   "last_pt_sha256": "f0ac978c371abcb870b5fbb88c31b47897ca33c95ceb395b03a3417e9a6fc3d4"
+  },
+  {
+   "t": "2026-11-17T18:07:56",
+   "msg": "charged eval517 P1e (P1e reserve)",
+   "days": 0.0064,
+   "spent": 1.648,
+   "remaining": 0.232
+  },
+  {
+   "t": "2026-11-17T18:08:00",
+   "msg": "GATE G2 FAILED -> P1b remains the model",
+   "per_group": {
+    "ALL": false,
+    "UIEB": false
+   }
+  }
+ ],
+ "launch": {
+  "created": "2026-11-17T06:19:46",
+  "git_head": "a9a4fbef6bc758a3c063e5f9ac6d61856efde7d9",
+  "git_clean_src": true,
+  "pca16_sha256": "1af06cbc713d50c149ce862d20521ec307395fc5ab15f77cfd20fcc2efe2c786",
+  "gate": "G2 (report sections M, P): adopt only if paired 517 dPSNR8 (P1e_s0 - P1b_s0) >= +0.2 dB with 95% CI excluding 0 on ALL or UIEB; else P1b remains the model",
+  "comparator": "P1b seed 0 runs/phase1/P1b_v2_dgt_ordered/20261110_093229/last.pt (5b22ea7c...)",
+  "test_split": "not accessed",
+  "checkpoint_selection": "last.pt at step 100000",
+  "command": "python -u src/training/train.py --crop 256 --batch 4 --accum 2 --iters 100000 --lr 5e-4 --lr-min 1e-6 --warmup 1000 --clip 1.0 --val-every 2000 --val-subset 100 --workers 4 --vram-frac 0.85 --seed 0 --phys-conditioning v2 --dgt --dgt-ordered --scene-prior-pca 16 --out runs/phase1/P1e_scene_pca16"
+ },
+ "result": {
+  "eval_dir": "runs\\diagnostics\\P2_EVAL517_P1e_s0_20261117_175848",
+  "absolute_psnr8": {
+   "ALL": 27.239090022081957,
+   "LSUI": 28.17879189497497,
+   "UIEB": 22.720074273787457
+  },
+  "absolute_ssim8": {
+   "ALL": 0.910924666796995,
+   "LSUI": 0.9131745366667907,
+   "UIEB": 0.9001050678725838
+  },
+  "pairs": {
+   "P1b_s0": {
+    "pair_dir": "runs\\diagnostics\\P2_PAIR_20261117_180758",
+    "LSUI": {
+     "est": -0.1541945676218366,
+     "lo": -0.344629126525729,
+     "hi": 0.028812404703486085,
+     "d_z": -0.07766031795557646,
+     "ci_excludes_0": false
+    },
+    "UIEB": {
+     "est": 0.0967848645894441,
+     "lo": -0.38350770170400644,
+     "hi": 0.5999002123922338,
+     "d_z": 0.03978584908651301,
+     "ci_excludes_0": false
+    },
+    "ALL": {
+     "est": -0.11098921081950777,
+     "lo": -0.28646667036870793,
+     "hi": 0.05801039247985455,
+     "d_z": -0.05364564535843182,
+     "ci_excludes_0": false
+    }
+   },
+   "v2_s0": {
+    "pair_dir": "runs\\diagnostics\\P2_PAIR_20261117_180800",
+    "LSUI": {
+     "est": -0.15219453358537485,
+     "lo": -0.35666946006139816,
+     "hi": 0.03515487941444369,
+     "d_z": -0.07283502224010016,
+     "ci_excludes_0": false
+    },
+    "UIEB": {
+     "est": 0.7099822889132672,
+     "lo": 0.18046460240827136,
+     "hi": 1.3224203173896383,
+     "d_z": 0.25920284162643387,
+     "ci_excludes_0": true
+    },
+    "ALL": {
+     "est": -0.0037733784550477278,
+     "lo": -0.19756649423989767,
+     "hi": 0.1828230348141414,
+     "d_z": -0.0016876922729762362,
+     "ci_excludes_0": false
+    }
+   }
+  },
+  "gate_G2": {
+   "per_group_pass": {
+    "ALL": false,
+    "UIEB": false
+   },
+   "passed": false,
+   "winner": "P1b",
+   "provisional": "single seed"
+  }
+ }
+}
